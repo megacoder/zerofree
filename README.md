@@ -1,17 +1,17 @@
-
-=========
+ZEROFREE
+========
 
 What
 ----
 
-Watch this space.
+Linux supports "sparse" files, which means runs of all-zero data can be omitted from a disk file.  This saves space.  Zerofree searches files for all-zero blocks and tries to release these blocks to save disk space.
 
 How
 ---
 
-$ FIXME
+$ zerofree <big-file-that-is-mostly-blocks-of-zeros>
 
 Why
 ---
 
-Feels good.
+Caveat: not all filesystems support sparse files.  Your mileage may vary.
